@@ -23,12 +23,11 @@ public class Campus extends BaseEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long campusId;
 
-	@Column(name = "campus_name", length = 50)
+	@Column(length = 50)
 	private String campusName;
 
 	@Builder
 	public Campus(String campusName) {
 		this.campusName = campusName;
-
 	}
 }

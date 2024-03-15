@@ -36,35 +36,29 @@ public class Member extends BaseEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long memberId;
 
-	@Column(name = "email", length = 50)
+	@Column(length = 50)
 	private String email;
 
-	@Column(name = "password", length = 50)
 	private String password;
 
-	@Column(name = "nickname", length = 50)
+	@Column(length = 50)
 	private String nickname;
 
-	@Column(name = "phone_num", length = 50)
+	@Column(length = 50)
 	private String phoneNum;
 
 	@Column(name = "user_role")
 	@Enumerated(EnumType.STRING)
 	private Role userRole;
 
-	@Column(name = "address")
 	private String address;
 
-	@Column(name = "profile_image")
 	private String profileImage;
 
-	@Column(name = "social_id")
 	private String socialId;
 
-	@Column(name = "refresh_token")
 	private String refreshToken;
 
-	@Column(name = "profile_key")
 	private String profileKey;
 
 	@ManyToOne
